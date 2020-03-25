@@ -12,7 +12,7 @@ import PackageDescription
 let package = Package(
     name: "KeychainAccess",
     products: [
-        .library(name: "KeychainAccess", targets: ["KeychainAccess"])
+        .library(name: "KeychainAccess", type: .dynamic, targets: ["KeychainAccess"])
     ],
     targets: [
         .target(name: "KeychainAccess", path: "Lib/KeychainAccess")
